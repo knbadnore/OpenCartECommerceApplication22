@@ -11,12 +11,12 @@
 		<listener
 			class-name="com.qa.opencart.listeners.TestAllureListener"></listener>
 	</listeners>
-	<!-- <test name="Account Page Test">
+	<test name="Account Page Test">
 	<classes>
 		<parameter name="browser" value="firefox"></parameter>
 		<class name="com.qa.opencart.tests.AccountPageTest" />
 	</classes>
-</test> -->
+</test>
 
 	<test name="Login Page Test">
 		<parameter name="browser" value="chrome"></parameter>
@@ -24,17 +24,20 @@
 			<class name="com.qa.opencart.tests.LoginPageTest"></class>
 		</classes>
 	</test>
-	<!-- <test name="Product Info Test"> <parameter name="browser" value="chrome"></parameter> 
-		<classes> <class name="com.qa.opencart.tests.ProductInfoTest"></class> </classes> 
-		</test> -->
+	<test name="Product Info Test">
+	<parameter name="browser" value="chrome"></parameter>
+	<classes>
+		<class name="com.qa.opencart.tests.ProductInfoTest"></class>
+	</classes>
+</test>
 
-	<!-- <test name="Register Page Test">
+	<test name="Register Page Test">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.qa.opencart.tests.RegisterPageTest">
 			</class>
 		</classes>
-	</test> -->
+	</test>
 
 
 </suite> 
